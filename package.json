@@ -1,0 +1,26 @@
+{
+  "name": "fastify-prisma-postgresql-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "prisma generate",
+    "build": "tsc -p tsconfig.json",
+    "start": "node build/app.js",
+    "dev": "ts-node src/app.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "prisma": "^5.17.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "@fastify/cors": "^9.0.1",
+    "@prisma/client": "^5.17.0",
+    "fastify": "^4.28.1"
+  }
+}
